@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "818340632312",
+    "firebase_url": "https://stat-7c30b.firebaseio.com",
+    "project_id": "stat-7c30b",
+    "storage_bucket": "stat-7c30b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818340632312:android:bb072aa316a77014",
+        "android_client_info": {
+          "package_name": "com.lotr.booking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818340632312-d4i99lbadb915slhda2j704lmp4lj1r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8rsZNXMCq1RWpX-_Dcmh2L5J5ucISpko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
