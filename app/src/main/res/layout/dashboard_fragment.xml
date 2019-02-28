@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="visible">
+
+        <TextView
+                android:id="@+id/title"
+                style="@style/TextCommon.ToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    style="@style/SectionMenuContainer.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_dashboard"
+                    />
+
+            <LinearLayout
+                    android:id="@+id/vg_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    style="@style/SectionMenuContainer.MenuItem"
+            >
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_menu_icon_size"
+                        android:layout_height="@dimen/dashboard_menu_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_balance"
+                />
+
+                <TextView
+                        android:id="@+id/tv_balance"
+                        style="@style/TextCommon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/balance"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_15dp"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                <TextView
+                        style="@style/TextCommon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10400.25 ₽"
+                        android:layout_marginEnd="@dimen/spacing_15dp"
+                        android:textColor="@color/oliveGreen"
+                        android:textSize="@dimen/text_size_small"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_arrow_icon_size"
+                        android:layout_height="@dimen/dashboard_arrow_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_right_arrow"
+                        android:tint="#acacac"
+                />
+
+            </LinearLayout>
+
+            <TextView
+                    style="@style/SectionMenuContainer.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history"
+                    />
+
+            <LinearLayout
+                    android:id="@+id/vg_booking_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    style="@style/SectionMenuContainer.MenuItem"
+            >
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_menu_icon_size"
+                        android:layout_height="@dimen/dashboard_menu_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_booking_history"
+                />
+
+                <TextView
+                        style="@style/TextCommon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking_history"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_15dp"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_arrow_icon_size"
+                        android:layout_height="@dimen/dashboard_arrow_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_right_arrow"
+                        android:tint="#acacac"
+                />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"
+            />
+
+            <LinearLayout
+                    android:id="@+id/vg_withdraw_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    style="@style/SectionMenuContainer.MenuItem"
+            >
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_menu_icon_size"
+                        android:layout_height="@dimen/dashboard_menu_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_withdraw_history"
+                />
+
+                <TextView
+                        style="@style/TextCommon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/withdraw_history"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_15dp"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_arrow_icon_size"
+                        android:layout_height="@dimen/dashboard_arrow_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_right_arrow"
+                        android:tint="#acacac"
+                />
+
+            </LinearLayout>
+
+            <TextView
+                    style="@style/SectionMenuContainer.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feedback"
+                   />
+
+            <LinearLayout
+                    android:id="@+id/vg_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    style="@style/SectionMenuContainer.MenuItem"
+            >
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_menu_icon_size"
+                        android:layout_height="@dimen/dashboard_menu_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_feedback"
+                />
+
+                <TextView
+                        style="@style/TextCommon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/support"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_15dp"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_arrow_icon_size"
+                        android:layout_height="@dimen/dashboard_arrow_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_right_arrow"
+                        android:tint="#acacac"
+                />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"
+            />
+
+            <LinearLayout
+                    android:id="@+id/vg_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    style="@style/SectionMenuContainer.MenuItem"
+            >
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_menu_icon_size"
+                        android:layout_height="@dimen/dashboard_menu_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_notifications"
+                />
+
+                <TextView
+                        style="@style/TextCommon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notifications"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_15dp"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_arrow_icon_size"
+                        android:layout_height="@dimen/dashboard_arrow_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_right_arrow"
+                        android:tint="#acacac"
+                />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"
+            />
+
+            <LinearLayout
+                    android:id="@+id/vg_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    style="@style/SectionMenuContainer.MenuItem"
+            >
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_menu_icon_size"
+                        android:layout_height="@dimen/dashboard_menu_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_help"
+                />
+
+                <TextView
+                        style="@style/TextCommon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/help"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_15dp"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_arrow_icon_size"
+                        android:layout_height="@dimen/dashboard_arrow_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_right_arrow"
+                        android:tint="#acacac"
+                />
+
+            </LinearLayout>
+
+            <TextView
+                    style="@style/SectionMenuContainer.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account"
+                    />
+
+            <LinearLayout
+                    android:id="@+id/vg_my_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    style="@style/SectionMenuContainer.MenuItem"
+            >
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_menu_icon_size"
+                        android:layout_height="@dimen/dashboard_menu_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_my_country"
+                />
+
+                <TextView
+                        style="@style/TextCommon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_country"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_15dp"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_arrow_icon_size"
+                        android:layout_height="@dimen/dashboard_arrow_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_right_arrow"
+                        android:tint="#acacac"
+                />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"
+            />
+
+            <LinearLayout
+                    android:id="@+id/vg_personal_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    style="@style/SectionMenuContainer.MenuItem"
+            >
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_menu_icon_size"
+                        android:layout_height="@dimen/dashboard_menu_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_personal_data"
+                />
+
+                <TextView
+                        style="@style/TextCommon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/personal_data"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_15dp"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dashboard_arrow_icon_size"
+                        android:layout_height="@dimen/dashboard_arrow_icon_size"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_right_arrow"
+                        android:tint="#acacac"
+                />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"
+            />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

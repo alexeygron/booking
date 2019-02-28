@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        style="@style/ClickableItem"
+>
+
+    <TextView
+            android:id="@+id/tv_date"
+            style="@style/TextCommon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dimGray"
+            android:text="23.01.2019 / 04:58"
+            android:textSize="@dimen/text_size_xsmall"
+            app:layout_constraintStart_toStartOf="@+id/divider"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            android:layout_marginBottom="5dp"/>
+
+    <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/lightGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/spacing_20dp"
+            android:layout_marginEnd="@dimen/spacing_10dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_shop_logo"/>
+
+    <TextView
+            android:id="@+id/tv_price"
+            style="@style/TextCommon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="11.79$"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="@+id/divider"
+            android:layout_marginTop="5dp"/>
+
+    <ImageView
+            android:id="@+id/iv_shop_logo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/booking_logo"
+            android:scaleType="fitCenter" android:layout_marginEnd="13dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="@dimen/dashboard_arrow_icon_size"
+            android:layout_height="@dimen/dashboard_arrow_icon_size"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_right_arrow"
+            android:tint="#acacac"
+            android:layout_marginEnd="@dimen/spacing_20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+            android:id="@+id/bottom_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -14,12 +14,12 @@
     <application
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:roundIcon="@mipmap/ic_launcher"
             android:supportsRtl="true"
             android:theme="@style/AppTheme" tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
         <activity
-                android:name=".NavigationActivity"
+                android:name=".ui.activity.NavigationActivity"
                 android:label="@string/app_name"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">

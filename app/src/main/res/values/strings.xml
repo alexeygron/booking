@@ -5,6 +5,33 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- Навигация и заголовки экранов -->
+    <string name="my_dashboard">Мой кабинет</string>
+
+
+    <!-- Мой кабинет -->
+    <string name="my_score">Мой счет</string>
+    <string name="balance">Балланс</string>
+    <string name="history">История</string>
+    <string name="booking_history">История бронирований</string>
+    <string name="purchase_history">История покупок</string>
+    <string name="withdraw_history">История вывода средств</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="support">Поддержка</string>
+    <string name="notifications">Уведомления</string>
+    <string name="help">Помощь</string>
+    <string name="account">Аккаунт</string>
+    <string name="my_country">Моя страна</string>
+    <string name="personal_data">Личные данные</string>
+
+    <!-- Баланс -->
+    <string name="available_to_conclusion">Доступно к выводу</string>
+    <string name="select_amount">Укажите сумму от 5$ до 10000$</string>
+    <string name="card_number">Номер карты</string>
+    <string name="phone_number">Контактный номер</string>
+    <string name="withdrawal_amount">Сумма вывода, $</string>
+    <string name="account_credits_time_msg">Среднее время поступления на счет 10 минут. В редких случаях это время может достигать 3 банковских дня. Комиссия за перевод 1% + 35₽</string>
+    <string name="further">Далее</string>
+
 </resources>

@@ -1,17 +1,76 @@
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+
     </style>
-    <style name="AppTheme.NoActionBar">
+
+    <style name="ClickableItem">
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="ClickableItem.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="ClickableItem.Button.Empty">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingStart">@dimen/spacing_8dp</item>
+        <item name="android:paddingEnd">@dimen/spacing_8dp</item>
+        <item name="android:drawablePadding">@dimen/spacing_3dp</item>
+    </style>
+
+    <style name="TextCommon" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="TextCommon.ToolbarTitle">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/whiteOpacity80</item>
+    </style>
+
+
+    <style name="Toolbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/cadetBlue</item>
+        <item name="android:visibility">gone</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Toolbar.Button.Navigation.Tinted" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="SectionMenuContainer" >
+        <item name="android:paddingStart">@dimen/spacing_18dp</item>
+        <item name="android:paddingEnd">@dimen/spacing_18dp</item>
+    </style>
+
+    <style name="SectionMenuContainer.Title" >
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/dimGray</item>
+        <item name="android:background">@color/lightGray</item>
+    </style>
+
+    <style name="SectionMenuContainer.MenuItem">
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
 
 </resources>

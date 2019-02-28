@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/myDashboard">
+
+    <fragment
+        android:id="@+id/myDashboard"
+        android:name="com.lotr.booking.ui.fragment.DashboardFragment"
+        android:label="my_dashboard_fragment"
+        tools:layout="@layout/dashboard_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/balance"
+        android:name="com.lotr.booking.ui.fragment.BalanceFragment"
+        android:label="balance_fragment"
+        tools:layout="@layout/balance_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/booking_history"
+        android:name="com.lotr.booking.ui.fragment.PurchaseHistoryFragment"
+        android:label="booking_history"
+        tools:layout="@layout/purchase_history_fragment">
+
+    </fragment>
+</navigation>
