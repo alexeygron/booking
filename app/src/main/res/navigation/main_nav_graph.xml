@@ -14,17 +14,49 @@
 
     <fragment
         android:id="@+id/balance"
-        android:name="com.lotr.booking.ui.fragment.BalanceFragment"
+        android:name="com.lotr.booking.ui.fragment.BalancePendingFragment"
         android:label="balance_fragment"
-        tools:layout="@layout/balance_fragment">
+        tools:layout="@layout/balance_pending_fragment">
 
     </fragment>
 
     <fragment
-        android:id="@+id/booking_history"
+        android:id="@+id/purchase_history"
         android:name="com.lotr.booking.ui.fragment.PurchaseHistoryFragment"
-        android:label="booking_history"
+        android:label="purchase_history"
         tools:layout="@layout/purchase_history_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/purchase"
+        android:name="com.lotr.booking.ui.fragment.PurchaseFragment"
+        android:label="purchase"
+        tools:layout="@layout/purchase_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/purchase_confirmed_fragment"
+        android:name="com.lotr.booking.ui.fragment.PurchaseConfirmedFragment"
+        android:label="purchase_confirmed_fragment"
+        tools:layout="@layout/purchase_confirmed_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmation_operation_fragment"
+        android:name="com.lotr.booking.ui.fragment.ConfirmationOperationFragment"
+        android:label="confirmation_operation_fragment"
+        tools:layout="@layout/confirmation_operation_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/money_transaction_fragment"
+        android:name="com.lotr.booking.ui.fragment.MoneyTransactionFragment"
+        android:label="money_transaction_fragment"
+        tools:layout="@layout/money_transaction_fragment">
 
     </fragment>
 </navigation>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+>
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="visible">
+
+        <TextView
+                android:id="@+id/title"
+                style="@style/TextCommon.ToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+            style="@style/TextCommon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGray"
+            android:padding="@dimen/spacing_18dp"
+            android:text="@string/sent_sms_code_msg"
+            android:textColor="@color/gray"
+            android:lineSpacingExtra="2sp"
+            android:textSize="13sp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <View
+                android:layout_width="@dimen/color_divider_width"
+                android:layout_height="match_parent"
+                android:background="@color/lightOliveGreen"
+        />
+
+        <TextView
+                style="@style/TextCommon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmation_code"
+                android:layout_weight="1"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginStart="@dimen/spacing_15dp"
+                android:textColor="@color/dimGray"
+                android:textSize="@dimen/text_size_small"/>
+
+        <EditText
+                android:id="@+id/et_sms_code"
+                style="@style/TextCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_code"
+                android:textColorHint="@color/dimGrayOpacity50"
+                android:layout_marginEnd="@dimen/spacing_15dp"
+                android:background="@null"
+                android:inputType="number"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small"/>
+
+    </LinearLayout>
+
+    <TextView
+            style="@style/TextCommon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGray"
+            android:padding="@dimen/spacing_18dp"
+            android:text="@string/resending_code"
+            android:textColor="@color/gray"
+            android:lineSpacingExtra="2sp"
+            android:textSize="@dimen/text_size_small"/>
+
+    <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_bkg"
+            android:text="@string/confirm"
+            android:layout_margin="@dimen/spacing_18dp"
+            android:layout_marginTop="@dimen/spacing_20dp"
+            android:layout_marginBottom="@dimen/spacing_8dp"
+            android:layout_gravity="center"
+            style="@style/ClickableItem.Button.Empty"
+    />
+
+</LinearLayout>

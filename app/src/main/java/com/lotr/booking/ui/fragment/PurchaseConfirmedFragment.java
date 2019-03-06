@@ -10,16 +10,16 @@ import com.lotr.booking.R;
 
 import static com.lotr.booking.util.LogUtils.makeLogTag;
 
-public class BalanceFragment extends CommonFragment {
+public class PurchaseConfirmedFragment extends CommonFragment {
 
-    private static final String LOG_TAG = makeLogTag(BalanceFragment.class);
+    private static final String LOG_TAG = makeLogTag(PurchaseConfirmedFragment.class);
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.balance_fragment, container, false);
+        View view = inflater.inflate(R.layout.purchase_confirmed_fragment, container, false);
         ButterKnife.bind(this, view);
-        setUpToolbar(view, R.id.toolbar, false, getString(R.string.balance));
+        setUpToolbar(view, R.id.toolbar, false, getString(R.string.confirmed));
         return view;
     }
 

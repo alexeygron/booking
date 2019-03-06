@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+>
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="visible">
+
+        <TextView
+                android:id="@+id/title"
+                style="@style/TextCommon.ToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+            android:id="@+id/vg_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            style="@style/SectionMenuContainer.MenuItem"
+    >
+
+        <ImageView
+                android:layout_width="@dimen/dashboard_menu_icon_size"
+                android:layout_height="@dimen/dashboard_menu_icon_size"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_balance"
+        />
+
+        <TextView
+                android:id="@+id/tv_balance"
+                style="@style/TextCommon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/available_to_conclusion"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/spacing_15dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+                style="@style/TextCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10400.25 ₽"
+                android:layout_marginEnd="@dimen/spacing_15dp"
+                android:textColor="@color/oliveGreen"
+                android:textSize="@dimen/text_size_small"/>
+
+        <ImageView
+                android:layout_width="@dimen/dashboard_arrow_icon_size"
+                android:layout_height="@dimen/dashboard_arrow_icon_size"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_right_arrow"
+                android:tint="#acacac"
+        />
+
+    </LinearLayout>
+
+    <TextView
+            style="@style/SectionMenuContainer.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pending"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <View
+                android:layout_width="@dimen/color_divider_width"
+                android:layout_height="match_parent"
+                android:background="@color/lightOliveGreen"
+        />
+
+        <TextView
+                style="@style/TextCommon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/euro"
+                android:layout_weight="1"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginStart="@dimen/spacing_15dp"
+                android:textColor="@color/dimGray"
+                android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+                style="@style/TextCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="82.93 €"
+                android:layout_marginEnd="@dimen/spacing_15dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGray"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <View
+                android:layout_width="@dimen/color_divider_width"
+                android:layout_height="match_parent"
+                android:background="@color/lightCadetBlue"
+        />
+
+        <TextView
+                style="@style/TextCommon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dollars"
+                android:layout_weight="1"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginStart="@dimen/spacing_15dp"
+                android:textColor="@color/dimGray"
+                android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+                style="@style/TextCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122.80 $"
+                android:layout_marginEnd="@dimen/spacing_15dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGray"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <View
+                android:layout_width="@dimen/color_divider_width"
+                android:layout_height="match_parent"
+                android:background="@color/lightPink"
+        />
+
+        <TextView
+                style="@style/TextCommon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rubles"
+                android:layout_weight="1"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginStart="@dimen/spacing_15dp"
+                android:textColor="@color/dimGray"
+                android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+                style="@style/TextCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15245.2 ₽"
+                android:layout_marginEnd="@dimen/spacing_15dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f6f5f9"
+            android:padding="@dimen/spacing_18dp"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/TextCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_withdraw_msg"
+                android:textColor="@color/gray"
+                android:lineSpacingExtra="2sp"
+                android:textSize="13sp"/>
+
+    </LinearLayout>
+</LinearLayout>

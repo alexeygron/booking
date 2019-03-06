@@ -11,9 +11,14 @@
     <color name="cadetBlue">#569ad1</color>
     <color name="lightCadetBlue">#73b1e2</color>
     <color name="lightPink">#ffcfc9</color>
+    <color name="aliceBlue">#c6e6ff</color>
+    <color name="antiqueWhite">#ffe4b3</color>
+    <color name="limeGreen">#8ac368</color>
+    <color name="mistyRose">#ed9ce0</color>
     <color name="whiteOpacity80">#ccffffff</color>
     <color name="lightGray">#f6f5f9</color>
     <color name="dimGray">#838383</color>
+    <color name="dimGrayOpacity50">#80838383</color>
     <color name="gray">#515151</color>
     <color name="oliveGreen">#79b244</color>
     <color name="lightOliveGreen">#8ed051</color>

@@ -9,7 +9,6 @@
     <!-- Навигация и заголовки экранов -->
     <string name="my_dashboard">Мой кабинет</string>
 
-
     <!-- Мой кабинет -->
     <string name="my_score">Мой счет</string>
     <string name="balance">Балланс</string>
@@ -24,6 +23,7 @@
     <string name="account">Аккаунт</string>
     <string name="my_country">Моя страна</string>
     <string name="personal_data">Личные данные</string>
+    <string name="confirm">Подтвердить</string>
 
     <!-- Баланс -->
     <string name="available_to_conclusion">Доступно к выводу</string>
@@ -31,7 +31,42 @@
     <string name="card_number">Номер карты</string>
     <string name="phone_number">Контактный номер</string>
     <string name="withdrawal_amount">Сумма вывода, $</string>
-    <string name="account_credits_time_msg">Среднее время поступления на счет 10 минут. В редких случаях это время может достигать 3 банковских дня. Комиссия за перевод 1% + 35₽</string>
+    <string name="account_credits_time_msg">Среднее время поступления на счет 10 минут. В редких случаях это время может
+        достигать 3 банковских дня. Комиссия за перевод 1% + 35₽</string>
+    <string name="confirmation_operation">Подтверждение операции</string>
+    <string name="sent_sms_code_msg">Мы отправили СМС с кодом подтверждения на номер телефона, указанный в вашем профиле. \nПожалуйста, введите его:</string>
+    <string name="confirmation_code">Код подтверждения:</string>
+    <string name="enter_code">Введите код</string>
+    <string name="resending_code">Повторная отправка кода через 09:54</string>
     <string name="further">Далее</string>
+    <string name="pending">В ожидании</string>
+    <string name="euro">Евро</string>
+    <string name="dollars">Доллары</string>
+    <string name="rubles">Рубли</string>
+    <string name="money_transaction">Перевод средств</string>
+    <string name="transaction_made_msg">Перевод денежных средств \nуспешно осуществлен</string>
+    <string name="time_to_money_receipts_msg">Среднее время поступления денег на счет 10 минут. В редких случаях это время может достигать 3 банковких дня</string>
+    <string name="money_receipts_problems_msg">Если у Вас возникли сложности с переводм денежных средств, пожалуйста обратитесь к нам:</string>
+    <string name="return_to_dashboard">Вернуться в мой кабинет</string>
+    <string name="by_email">по почте круглосуточно:</string>
+    <string name="by_phone">по телефону пн-пт 9:00 - 18:00</string>
+    <string name="balance_withdraw_msg">Иностранные магазины и сервисы, например AliExpress и Booking.com, начисляют вознаграждение, из которого
+        выплачивается кэшбэк, в валюте, вследствие этого в статусе  «В ожидании ваш кэшбэк отображается в валюте.
+        \n\nВ день, когда магазины перечисляют вознаграждение СКИДКА РУ,  вознаграждение автоматически
+        конвертируется в российские рубли по актуальному курсу ЦБ РФ и ваш кэшбэк становится доступным к выводу.</string>
+
+
+    <!-- История покупок -->
+    <string name="shop">Магазин</string>
+    <string name="purchase_date">Дата покупки</string>
+    <string name="order_number">Номер заказа</string>
+    <string name="purchase_amount">Сумма покупки</string>
+    <string name="rate">Ставка</string>
+    <string name="cashback">Кэшбэк</string>
+    <string name="status">Статус</string>
+    <string name="confirmed">Подтверждено</string>
+    <string name="confirmed_purchase_msg">Booking.com подтвердил Вашу покупку. Комиссию, из которой выплачивается кэшбэк,
+        Booking.com перечислит нам 30.03.2019 и ваш кэшбэк будет сразу доступен к выводу. \n\n(По независящим от нас
+        причинам Booking.com может перенести срок перечисления комиссии, из которой выплачивается кэшбэк. Но такое случается крайне редко).</string>
 
 </resources>

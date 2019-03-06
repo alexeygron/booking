@@ -21,7 +21,7 @@
     <dimen name="spacing_40dp">40dp</dimen>
 
     <!-- Размеры текста -->
-    <dimen name="text_size_xsmall">12sp</dimen>
+    <dimen name="text_size_xsmall">13sp</dimen>
     <dimen name="text_size_small">14sp</dimen>
     <dimen name="text_size_normal">16sp</dimen>
     <dimen name="text_size_medium">17sp</dimen>
@@ -29,5 +29,6 @@
 
     <dimen name="dashboard_menu_icon_size">34dp</dimen>
     <dimen name="dashboard_arrow_icon_size">15dp</dimen>
+    <dimen name="color_divider_width">3dp</dimen>
 
 </resources>

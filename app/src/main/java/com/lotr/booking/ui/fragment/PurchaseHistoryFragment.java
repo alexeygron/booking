@@ -2,13 +2,11 @@ package com.lotr.booking.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.lotr.booking.R;
@@ -33,8 +31,8 @@ public class PurchaseHistoryFragment extends CommonFragment {
         View view = inflater.inflate(R.layout.purchase_history_fragment, container, false);
         ButterKnife.bind(this, view);
         setUpToolbar(view, R.id.toolbar, false, getString(R.string.purchase_history));
-
         setUpList();
+        //startPurchaseScreen();
         return view;
     }
 
@@ -64,6 +62,15 @@ public class PurchaseHistoryFragment extends CommonFragment {
     }
 
     PurchaseHistoryAdapter.ClickListener listItemClickListener = item -> {
-
+        startPurchaseScreen();
     };
+
+    private void startPurchaseScreen() {
+        PurchaseFragment fragment = new PurchaseFragment();
+        getActivity().getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.fragment_container, fragment, PurchaseFragment.class.getName())
+                .addToBackStack(BalancePendingFragment.class.getName())
+                .commit();
+    }
 }

@@ -21,7 +21,8 @@ public class DashboardFragment extends CommonFragment {
         View view = inflater.inflate(R.layout.dashboard_fragment, container, false);
         ButterKnife.bind(this, view);
         setUpToolbar(view, R.id.toolbar, true, getString(R.string.my_dashboard));
-        startPurchaseHistoryScreen();
+        //startPurchaseHistoryScreen();
+        //startBalanceScreen();
         return view;
     }
 
@@ -66,11 +67,11 @@ public class DashboardFragment extends CommonFragment {
     }
 
     private void startBalanceScreen() {
-        BalanceFragment fragment = new BalanceFragment();
+        BalancePendingFragment fragment = new BalancePendingFragment();
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.fragment_container, fragment, BalanceFragment.class.getName())
-                .addToBackStack(BalanceFragment.class.getName())
+                .add(R.id.fragment_container, fragment, BalancePendingFragment.class.getName())
+                .addToBackStack(BalancePendingFragment.class.getName())
                 .commit();
     }
 
@@ -79,7 +80,7 @@ public class DashboardFragment extends CommonFragment {
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.fragment_container, fragment, PurchaseHistoryFragment.class.getName())
-                .addToBackStack(BalanceFragment.class.getName())
+                .addToBackStack(BalancePendingFragment.class.getName())
                 .commit();
     }
 }

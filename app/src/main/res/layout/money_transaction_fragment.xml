@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="visible">
+
+        <TextView
+                android:id="@+id/title"
+                style="@style/TextCommon.ToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+            android:id="@+id/tv_transaction_made_msg"
+            style="@style/TextCommon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_25dp"
+            android:text="@string/transaction_made_msg"
+            android:textAlignment="center"
+            android:textColor="@color/cadetBlue"
+            android:lineSpacingExtra="5sp"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+    <TextView
+            android:id="@+id/tv_time_to_money_receipts_msg"
+            style="@style/TextCommon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/spacing_18dp"
+            android:layout_marginEnd="@dimen/spacing_18dp"
+            android:padding="@dimen/spacing_15dp"
+            android:text="@string/time_to_money_receipts_msg"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:lineSpacingExtra="4sp"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintTop_toBottomOf="@+id/tv_transaction_made_msg"
+    />
+
+    <TextView
+            android:id="@+id/tv_money_receipts_problems_msg"
+            style="@style/TextCommon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_18dp"
+            android:text="@string/money_receipts_problems_msg"
+            android:textColor="@color/gray"
+            android:lineSpacingExtra="2sp"
+            android:textSize="@dimen/text_size_xsmall"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time_to_money_receipts_msg"
+    />
+
+    <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_arrow_right_blue"
+            app:layout_constraintTop_toBottomOf="@+id/tv_money_receipts_problems_msg"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/spacing_10dp"
+            android:layout_marginStart="@dimen/spacing_18dp"
+            android:id="@+id/imageView"/>
+
+    <TextView
+            style="@style/TextCommon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/by_email"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_xsmall"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            android:layout_marginStart="@dimen/spacing_10dp"
+            android:id="@+id/textView3"/>
+
+    <TextView
+            android:id="@+id/textView6"
+            style="@style/TextCommon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="support@skidka.ru"
+            android:textColor="@color/cadetBlue"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            android:layout_marginTop="5dp"/>
+
+    <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_arrow_right_blue"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/spacing_18dp"
+            android:layout_marginStart="@dimen/spacing_18dp"
+            android:id="@+id/imageView2"/>
+
+    <TextView
+            style="@style/TextCommon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/by_phone"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_xsmall"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            android:layout_marginStart="@dimen/spacing_10dp"
+            android:id="@+id/textView4"/>
+
+
+    <TextView
+            style="@style/TextCommon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 (800) 707-1492"
+            android:textColor="@color/cadetBlue"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView2"/>
+
+    <Button
+            android:id="@+id/btn_return_to_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_bkg"
+            android:text="@string/return_to_dashboard"
+            android:layout_marginStart="@dimen/spacing_18dp"
+            android:layout_marginTop="@dimen/spacing_35dp"
+            android:layout_marginEnd="@dimen/spacing_18dp"
+            style="@style/ClickableItem.Button.Empty"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+</android.support.constraint.ConstraintLayout>
