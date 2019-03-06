@@ -55,6 +55,13 @@
         \n\nВ день, когда магазины перечисляют вознаграждение СКИДКА РУ,  вознаграждение автоматически
         конвертируется в российские рубли по актуальному курсу ЦБ РФ и ваш кэшбэк становится доступным к выводу.</string>
 
+    <!-- Вывод средств -->
+    <string name="withdrawal_money_history">История получения денег</string>
+    <string name="withdrawal_date">Дата вывода</string>
+    <string name="visa_mastercard">Visa / Mastercard</string>
+    <string name="withdrawal_sum">Сумма вывода</string>
+    <string name="commission">Коммисия</string>
+    <string name="state">Статус</string>
 
     <!-- История покупок -->
     <string name="shop">Магазин</string>

@@ -23,6 +23,7 @@ public class DashboardFragment extends CommonFragment {
         setUpToolbar(view, R.id.toolbar, true, getString(R.string.my_dashboard));
         //startPurchaseHistoryScreen();
         //startBalanceScreen();
+        //startWithdrawalMoneyHistoryScreen();
         return view;
     }
 
@@ -36,9 +37,9 @@ public class DashboardFragment extends CommonFragment {
         startPurchaseHistoryScreen();
     }
 
-    @OnClick(R.id.vg_withdraw_history)
-    public void onWithdrawHistoryClick() {
-
+    @OnClick(R.id.vg_withdrawal_history)
+    public void onWithdrawalHistoryClick() {
+        startWithdrawalMoneyHistoryScreen();
     }
 
     @OnClick(R.id.vg_support)
@@ -80,7 +81,16 @@ public class DashboardFragment extends CommonFragment {
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.fragment_container, fragment, PurchaseHistoryFragment.class.getName())
-                .addToBackStack(BalancePendingFragment.class.getName())
+                .addToBackStack(PurchaseHistoryFragment.class.getName())
+                .commit();
+    }
+
+    private void startWithdrawalMoneyHistoryScreen() {
+        WithdrawalMoneyHistoryFragment fragment = new WithdrawalMoneyHistoryFragment();
+        getActivity().getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.fragment_container, fragment, WithdrawalMoneyHistoryFragment.class.getName())
+                .addToBackStack(WithdrawalMoneyHistoryFragment.class.getName())
                 .commit();
     }
 }

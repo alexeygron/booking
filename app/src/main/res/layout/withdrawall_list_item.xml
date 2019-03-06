@@ -4,7 +4,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
+        android:layout_height="wrap_content"
         style="@style/ClickableItem">
 
     <TextView
@@ -13,42 +13,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/dimGray"
-            android:text="23.01.2019 / 04:58"
-            android:textSize="@dimen/text_size_xsmall"
-            app:layout_constraintStart_toStartOf="@+id/divider"
-            app:layout_constraintBottom_toTopOf="@+id/divider"
-            android:layout_marginBottom="5dp"/>
-
-    <View
-            android:id="@+id/divider"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:background="@color/lightGray"
+            android:padding="@dimen/spacing_18dp"
+            android:text="11.79$"
+            android:textSize="@dimen/text_size_small"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="@dimen/spacing_20dp"
-            android:layout_marginEnd="@dimen/spacing_10dp"
-            app:layout_constraintEnd_toStartOf="@+id/iv_shop_logo"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-            android:id="@+id/tv_price"
+            android:id="@+id/tv_score"
             style="@style/TextCommon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/gray"
             android:text="11.79$"
             android:textSize="@dimen/text_size_small"
-            app:layout_constraintTop_toBottomOf="@+id/divider"
-            app:layout_constraintStart_toStartOf="@+id/divider"
-            android:layout_marginTop="5dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_target"
+            app:layout_constraintStart_toEndOf="@+id/tv_date"
+    />
 
-    <ImageView
-            android:id="@+id/iv_shop_logo"
-            android:layout_width="120dp"
+    <TextView
+            android:id="@+id/tv_target"
+            style="@style/TextCommon"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/booking_logo"
-            android:scaleType="fitCenter" android:layout_marginEnd="13dp"
+            android:textColor="@color/gray"
+            android:text="Visa / Mastercard"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginEnd="13dp"
             app:layout_constraintEnd_toStartOf="@+id/iv_arrow"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>

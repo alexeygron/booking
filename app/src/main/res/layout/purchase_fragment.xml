@@ -4,8 +4,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/white"
->
+        style="@style/ScreenCommon">
 
     <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -27,14 +26,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            style="@style/ClickableItem"
-    >
+            style="@style/ClickableItem">
 
         <View
                 android:layout_width="@dimen/color_divider_width"
                 android:layout_height="match_parent"
-                android:background="@color/lightOliveGreen"
-        />
+                android:background="@color/lightOliveGreen"/>
 
         <TextView
                 style="@style/TextCommon"
@@ -62,8 +59,7 @@
                 android:layout_height="@dimen/dashboard_arrow_icon_size"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_right_arrow"
-                android:layout_marginEnd="@dimen/spacing_15dp"
-        />
+                android:layout_marginEnd="@dimen/spacing_15dp"/>
 
     </LinearLayout>
 
@@ -75,8 +71,7 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-           >
+            android:orientation="horizontal">
 
         <View
                 android:layout_width="@dimen/color_divider_width"

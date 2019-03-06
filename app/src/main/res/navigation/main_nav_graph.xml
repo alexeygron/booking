@@ -59,4 +59,20 @@
         tools:layout="@layout/money_transaction_fragment">
 
     </fragment>
+
+    <fragment
+        android:id="@+id/withdrawal_money_history_fragment"
+        android:name="com.lotr.booking.ui.fragment.WithdrawalMoneyHistoryFragment"
+        android:label="withdrawal_money_history_fragment"
+        tools:layout="@layout/withdrawal_money_history_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/withdrawal_target_fragment"
+        android:name="com.lotr.booking.ui.fragment.WithdrawalTargetFragment"
+        android:label="withdrawal_target_fragment"
+        tools:layout="@layout/withdrawal_target_fragment">
+
+    </fragment>
 </navigation>

@@ -40,6 +40,10 @@
         <item name="android:textColor">@color/whiteOpacity80</item>
     </style>
 
+    <style name="ScreenCommon">
+        <item name="android:background">@color/white</item>
+        <item name="android:clickable">true</item>
+    </style>
 
     <style name="Toolbar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:background">@color/cadetBlue</item>
