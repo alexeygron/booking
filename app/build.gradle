@@ -78,6 +78,9 @@ dependencies {
 
     // Data
     implementation 'com.orhanobut:hawk:2.0.1'
+
+    // UI
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
 }
 
 apply plugin: 'com.google.gms.google-services'

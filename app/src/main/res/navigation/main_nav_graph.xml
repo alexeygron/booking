@@ -75,4 +75,20 @@
         tools:layout="@layout/withdrawal_target_fragment">
 
     </fragment>
+
+    <fragment
+        android:id="@+id/help_fragment"
+        android:name="com.lotr.booking.ui.fragment.HelpFragment"
+        android:label="help_fragment"
+        tools:layout="@layout/help_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/questions_answers_fragment"
+        android:name="com.lotr.booking.ui.fragment.QuestionsAnswersFragment"
+        android:label="questions_answers_fragment"
+        tools:layout="@layout/questions_answers_fragment">
+
+    </fragment>
 </navigation>

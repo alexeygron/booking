@@ -24,6 +24,7 @@ public class DashboardFragment extends CommonFragment {
         //startPurchaseHistoryScreen();
         //startBalanceScreen();
         //startWithdrawalMoneyHistoryScreen();
+        //startHelpScreen();
         return view;
     }
 
@@ -54,7 +55,7 @@ public class DashboardFragment extends CommonFragment {
 
     @OnClick(R.id.vg_help)
     public void onHelpClick() {
-
+        startHelpScreen();
     }
 
     @OnClick(R.id.vg_my_country)
@@ -91,6 +92,15 @@ public class DashboardFragment extends CommonFragment {
                 .beginTransaction()
                 .add(R.id.fragment_container, fragment, WithdrawalMoneyHistoryFragment.class.getName())
                 .addToBackStack(WithdrawalMoneyHistoryFragment.class.getName())
+                .commit();
+    }
+
+    private void startHelpScreen() {
+        HelpFragment fragment = new HelpFragment();
+        getActivity().getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.fragment_container, fragment, HelpFragment.class.getName())
+                .addToBackStack(HelpFragment.class.getName())
                 .commit();
     }
 }

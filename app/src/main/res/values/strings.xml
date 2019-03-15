@@ -72,8 +72,17 @@
     <string name="cashback">Кэшбэк</string>
     <string name="status">Статус</string>
     <string name="confirmed">Подтверждено</string>
-    <string name="confirmed_purchase_msg">Booking.com подтвердил Вашу покупку. Комиссию, из которой выплачивается кэшбэк,
+    <string name="confirmed_purchase_msg">\nBooking.com подтвердил Вашу покупку. Комиссию, из которой выплачивается кэшбэк,
         Booking.com перечислит нам 30.03.2019 и ваш кэшбэк будет сразу доступен к выводу. \n\n(По независящим от нас
         причинам Booking.com может перенести срок перечисления комиссии, из которой выплачивается кэшбэк. Но такое случается крайне редко).</string>
+
+    <!-- Помощь -->
+    <string name="questions_answers">Вопросы и ответы</string>
+    <string name="legal_information">Правовая информация</string>
+    <string name="about_company">О компании</string>
+    <string name="start_information">Стартовая инструкция</string>
+
+
+    <string name="text">Кэшбэк - это бонус, как форма стимулирования покупателя, которая означает уменьшение фактических затрат покупателя на приобретение товара/услуги</string>
 
 </resources>

@@ -30,5 +30,6 @@
     <dimen name="dashboard_menu_icon_size">34dp</dimen>
     <dimen name="dashboard_arrow_icon_size">15dp</dimen>
     <dimen name="color_divider_width">3dp</dimen>
+    <dimen name="faq_list_item_height">42dp</dimen>
 
 </resources>
