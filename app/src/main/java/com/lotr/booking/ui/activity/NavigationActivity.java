@@ -1,10 +1,15 @@
 package com.lotr.booking.ui.activity;
 
+import android.content.ActivityNotFoundException;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.WindowManager;
@@ -13,6 +18,8 @@ import androidx.navigation.Navigation;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.lotr.booking.R;
+
+import java.util.Base64;
 
 public class NavigationActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -27,6 +34,19 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
         setContentView(R.layout.navigation_activity);
         ButterKnife.bind(this);
         setUpNavigation();
+        //launchMarket(this, "https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dui.liforapps%26referrer%3D3Dlogolink");
+        //launchMarket(this, "by.nitroapps&referrer=3Dlogolink");
+    }
+
+    public static void launchMarket(Context context, String packageName) {
+        Uri uri = Uri.parse("market://details?id=" + packageName);
+        Intent myAppLinkToMarket = new Intent(Intent.ACTION_VIEW, uri);
+        context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://zigm-cards.com/redir.php?q=" + packageName)));
+        /*try {
+            context.startActivity(myAppLinkToMarket);
+        } catch (ActivityNotFoundException e) {
+            context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + packageName)));
+        }*/
     }
 
     private void setUpNavigation() {
