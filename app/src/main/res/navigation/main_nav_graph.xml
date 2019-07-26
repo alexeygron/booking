@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/myDashboard"
-        android:name="com.lotr.booking.ui.fragment.DashboardFragment"
+        android:name="com.harts.app.views.fragment.DashboardFragment"
         android:label="my_dashboard_fragment"
         tools:layout="@layout/dashboard_fragment">
 
@@ -14,7 +14,7 @@
 
     <fragment
         android:id="@+id/balance"
-        android:name="com.lotr.booking.ui.fragment.BalancePendingFragment"
+        android:name="com.harts.app.views.fragment.BalancePendingFragment"
         android:label="balance_fragment"
         tools:layout="@layout/balance_pending_fragment">
 
@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/purchase_history"
-        android:name="com.lotr.booking.ui.fragment.PurchaseHistoryFragment"
+        android:name="com.harts.app.views.fragment.PurchaseHistoryFragment"
         android:label="purchase_history"
         tools:layout="@layout/purchase_history_fragment">
 
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/purchase"
-        android:name="com.lotr.booking.ui.fragment.PurchaseFragment"
+        android:name="com.harts.app.views.fragment.PurchaseFragment"
         android:label="purchase"
         tools:layout="@layout/purchase_fragment">
 
@@ -38,7 +38,7 @@
 
     <fragment
         android:id="@+id/purchase_confirmed_fragment"
-        android:name="com.lotr.booking.ui.fragment.PurchaseConfirmedFragment"
+        android:name="com.harts.app.views.fragment.PurchaseConfirmedFragment"
         android:label="purchase_confirmed_fragment"
         tools:layout="@layout/purchase_confirmed_fragment">
 
@@ -46,7 +46,7 @@
 
     <fragment
         android:id="@+id/confirmation_operation_fragment"
-        android:name="com.lotr.booking.ui.fragment.ConfirmationOperationFragment"
+        android:name="com.harts.app.views.fragment.ConfirmationOperationFragment"
         android:label="confirmation_operation_fragment"
         tools:layout="@layout/confirmation_operation_fragment">
 
@@ -54,7 +54,7 @@
 
     <fragment
         android:id="@+id/money_transaction_fragment"
-        android:name="com.lotr.booking.ui.fragment.MoneyTransactionFragment"
+        android:name="com.harts.app.views.fragment.MoneyTransactionFragment"
         android:label="money_transaction_fragment"
         tools:layout="@layout/money_transaction_fragment">
 
@@ -62,7 +62,7 @@
 
     <fragment
         android:id="@+id/withdrawal_money_history_fragment"
-        android:name="com.lotr.booking.ui.fragment.WithdrawalMoneyHistoryFragment"
+        android:name="com.harts.app.views.fragment.WithdrawalMoneyHistoryFragment"
         android:label="withdrawal_money_history_fragment"
         tools:layout="@layout/withdrawal_money_history_fragment">
 
@@ -70,7 +70,7 @@
 
     <fragment
         android:id="@+id/withdrawal_target_fragment"
-        android:name="com.lotr.booking.ui.fragment.WithdrawalTargetFragment"
+        android:name="com.harts.app.views.fragment.WithdrawalTargetFragment"
         android:label="withdrawal_target_fragment"
         tools:layout="@layout/withdrawal_target_fragment">
 
@@ -78,7 +78,7 @@
 
     <fragment
         android:id="@+id/help_fragment"
-        android:name="com.lotr.booking.ui.fragment.HelpFragment"
+        android:name="com.harts.app.views.fragment.HelpFragment"
         android:label="help_fragment"
         tools:layout="@layout/help_fragment">
 
@@ -86,7 +86,7 @@
 
     <fragment
         android:id="@+id/questions_answers_fragment"
-        android:name="com.lotr.booking.ui.fragment.QuestionsAnswersFragment"
+        android:name="com.harts.app.views.fragment.QuestionsAnswersFragment"
         android:label="questions_answers_fragment"
         tools:layout="@layout/questions_answers_fragment">
 
