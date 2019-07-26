@@ -34,7 +34,7 @@
                 android:layout_width="@dimen/dashboard_menu_icon_size"
                 android:layout_height="@dimen/dashboard_menu_icon_size"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_balance"/>
+                android:src="@drawable/iconbalance"/>
 
         <TextView
                 android:id="@+id/tv_balance"
@@ -60,7 +60,7 @@
                 android:layout_width="@dimen/dashboard_arrow_icon_size"
                 android:layout_height="@dimen/dashboard_arrow_icon_size"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_right_arrow"
+                android:src="@drawable/iconrighttoarrow"
                 android:tint="#acacac"
         />
 
@@ -210,7 +210,7 @@
                 android:id="@+id/btn_further"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/blue_button_bkg"
+                android:background="@drawable/bluetobuttontobkg"
                 android:text="@string/further"
                 android:layout_marginTop="@dimen/spacing_20dp"
                 android:layout_marginBottom="@dimen/spacing_8dp"

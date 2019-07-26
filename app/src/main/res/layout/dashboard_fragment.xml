@@ -51,7 +51,7 @@
                         android:layout_width="@dimen/dashboard_menu_icon_size"
                         android:layout_height="@dimen/dashboard_menu_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_balance"
+                        android:src="@drawable/iconbalance"
                 />
 
                 <TextView
@@ -78,7 +78,7 @@
                         android:layout_width="@dimen/dashboard_arrow_icon_size"
                         android:layout_height="@dimen/dashboard_arrow_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_right_arrow"
+                        android:src="@drawable/iconrighttoarrow"
                         android:tint="#acacac"
                 />
 
@@ -105,7 +105,7 @@
                         android:layout_width="@dimen/dashboard_menu_icon_size"
                         android:layout_height="@dimen/dashboard_menu_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_booking_history"
+                        android:src="@drawable/iconbookingtohistory"
                 />
 
                 <TextView
@@ -122,7 +122,7 @@
                         android:layout_width="@dimen/dashboard_arrow_icon_size"
                         android:layout_height="@dimen/dashboard_arrow_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_right_arrow"
+                        android:src="@drawable/iconrighttoarrow"
                         android:tint="#acacac"
                 />
 
@@ -148,7 +148,7 @@
                         android:layout_width="@dimen/dashboard_menu_icon_size"
                         android:layout_height="@dimen/dashboard_menu_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_withdraw_history"
+                        android:src="@drawable/iconwithdrawtohistory"
                 />
 
                 <TextView
@@ -165,7 +165,7 @@
                         android:layout_width="@dimen/dashboard_arrow_icon_size"
                         android:layout_height="@dimen/dashboard_arrow_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_right_arrow"
+                        android:src="@drawable/iconrighttoarrow"
                         android:tint="#acacac"
                 />
 
@@ -192,7 +192,7 @@
                         android:layout_width="@dimen/dashboard_menu_icon_size"
                         android:layout_height="@dimen/dashboard_menu_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_feedback"
+                        android:src="@drawable/iconfeedback"
                 />
 
                 <TextView
@@ -209,7 +209,7 @@
                         android:layout_width="@dimen/dashboard_arrow_icon_size"
                         android:layout_height="@dimen/dashboard_arrow_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_right_arrow"
+                        android:src="@drawable/iconrighttoarrow"
                         android:tint="#acacac"
                 />
 
@@ -235,7 +235,7 @@
                         android:layout_width="@dimen/dashboard_menu_icon_size"
                         android:layout_height="@dimen/dashboard_menu_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_notifications"
+                        android:src="@drawable/iconnotifications"
                 />
 
                 <TextView
@@ -252,7 +252,7 @@
                         android:layout_width="@dimen/dashboard_arrow_icon_size"
                         android:layout_height="@dimen/dashboard_arrow_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_right_arrow"
+                        android:src="@drawable/iconrighttoarrow"
                         android:tint="#acacac"
                 />
 
@@ -278,7 +278,7 @@
                         android:layout_width="@dimen/dashboard_menu_icon_size"
                         android:layout_height="@dimen/dashboard_menu_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_help"
+                        android:src="@drawable/iconhelp"
                 />
 
                 <TextView
@@ -295,7 +295,7 @@
                         android:layout_width="@dimen/dashboard_arrow_icon_size"
                         android:layout_height="@dimen/dashboard_arrow_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_right_arrow"
+                        android:src="@drawable/iconrighttoarrow"
                         android:tint="#acacac"
                 />
 
@@ -322,7 +322,7 @@
                         android:layout_width="@dimen/dashboard_menu_icon_size"
                         android:layout_height="@dimen/dashboard_menu_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_my_country"
+                        android:src="@drawable/iconmytocountry"
                 />
 
                 <TextView
@@ -339,7 +339,7 @@
                         android:layout_width="@dimen/dashboard_arrow_icon_size"
                         android:layout_height="@dimen/dashboard_arrow_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_right_arrow"
+                        android:src="@drawable/iconrighttoarrow"
                         android:tint="#acacac"
                 />
 
@@ -365,7 +365,7 @@
                         android:layout_width="@dimen/dashboard_menu_icon_size"
                         android:layout_height="@dimen/dashboard_menu_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_personal_data"
+                        android:src="@drawable/iconpersonaltodata"
                 />
 
                 <TextView
@@ -382,7 +382,7 @@
                         android:layout_width="@dimen/dashboard_arrow_icon_size"
                         android:layout_height="@dimen/dashboard_arrow_icon_size"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_right_arrow"
+                        android:src="@drawable/iconrighttoarrow"
                         android:tint="#acacac"
                 />
 

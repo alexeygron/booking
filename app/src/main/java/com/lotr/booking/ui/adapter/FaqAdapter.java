@@ -48,9 +48,9 @@ public class FaqAdapter extends RecyclerView.Adapter<FaqAdapter.ViewHolder> {
 
         holder.expandableLayout.setOnExpansionUpdateListener((expansionFraction, state) -> {
             if (state == 2) {
-                holder.iv_arrow.setImageResource(R.drawable.ic_arrow_up);
+                holder.iv_arrow.setImageResource(R.drawable.iconarrowtoup);
             } else if (state == 1) {
-                holder.iv_arrow.setImageResource(R.drawable.ic_arrow_down);
+                holder.iv_arrow.setImageResource(R.drawable.iconarrowtodown);
             }
         });
     }

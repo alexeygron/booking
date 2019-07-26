@@ -54,10 +54,10 @@ public class CommonFragment extends Fragment {
         toggle.setDrawerIndicatorEnabled(false);
 
         if (primaryScreen) {
-            toolbar.setNavigationIcon(R.drawable.ic_drawer_toggle);
+            toolbar.setNavigationIcon(R.drawable.icondrawertotoggle);
             toolbar.setNavigationOnClickListener(view -> ((NavigationActivity) getActivity()).showDrawer(true));
         } else {
-            toolbar.setNavigationIcon(R.drawable.ic_back);
+            toolbar.setNavigationIcon(R.drawable.iconback);
             toolbar.setNavigationOnClickListener(v -> goBackStack());
         }
     }

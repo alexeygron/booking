@@ -58,7 +58,7 @@
                 android:layout_width="@dimen/dashboard_arrow_icon_size"
                 android:layout_height="@dimen/dashboard_arrow_icon_size"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_right_arrow"
+                android:src="@drawable/iconrighttoarrow"
                 android:layout_marginEnd="@dimen/spacing_15dp"/>
 
     </LinearLayout>
@@ -306,7 +306,7 @@
                 android:layout_height="@dimen/dashboard_arrow_icon_size"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_right_arrow"
+                android:src="@drawable/iconrighttoarrow"
                 android:layout_marginEnd="@dimen/spacing_15dp"
         />
 

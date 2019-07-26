@@ -19,7 +19,7 @@
                 android:layout_height="11dp"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_arrow_down"/>
+                android:src="@drawable/iconarrowtodown"/>
 
         <TextView
                 android:id="@+id/tvTitle"

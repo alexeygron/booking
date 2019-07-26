@@ -84,7 +84,7 @@
             android:id="@+id/btn_confirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/blue_button_bkg"
+            android:background="@drawable/bluetobuttontobkg"
             android:text="@string/confirm"
             android:layout_margin="@dimen/spacing_18dp"
             android:layout_marginTop="@dimen/spacing_20dp"

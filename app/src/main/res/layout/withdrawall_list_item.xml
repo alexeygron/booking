@@ -53,7 +53,7 @@
             android:layout_width="@dimen/dashboard_arrow_icon_size"
             android:layout_height="@dimen/dashboard_arrow_icon_size"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_right_arrow"
+            android:src="@drawable/iconrighttoarrow"
             android:tint="#acacac"
             android:layout_marginEnd="@dimen/spacing_20dp"
             app:layout_constraintEnd_toEndOf="parent"
